@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>The Collection</h1>
+    <p class="subtitle">A private archive of vinyl</p>
+  </header>
+
+  <section class="add-section">
+    <div class="add-box">
+      <input type="text" id="barcodeInput" placeholder="Enter barcode (UPC)" autocomplete="off">
+      <button id="addBtn">Add Record</button>
+    </div>
+    <p class="hint">Scan or type the barcode. Cover art and details load automatically.</p>
+  </section>
+
+  <main>
+    <div id="collection" class="grid"></div>
+    <p id="empty" class="empty">Your collection is empty. Add your first record above.</p>
+  </main>
+
+  <footer>
+    <button id="exportBtn">Export barcodes for sharing</button>
+    <p class="note">Collection is stored in your browser. Use Export to update the public version.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
